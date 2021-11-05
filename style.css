@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Montserrat:wght@100;300;400;500;600;700&family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    max-width: 1280px;
+    overflow-x: hidden;
+}
+
+
+/* Start Header */
+header {
+  position: fixed;
+  top: 0;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background: #002366;
+    width: 84.375%;
+    left: 7.8125%;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+nav .logo {
+    position: relative;
+    padding-left: 1%;
+}
+
+nav .nav-items{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1%;
+}
+
+.nav-items li {
+    position: relative;
+    list-style: none;
+    display: flex;
+}
+
+.nav-items li a {
+    position: relative;
+    margin-left: 7vw;
+    text-decoration: none;
+    font-family: "Montserrat" ;
+    font-weight: 600;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.logo img {
+    display: flex;
+    width: 3vw;
+}
+
+/* start slider image */
+
+
+#cover{
+    width: 100%;
+    display: flex;
+    z-index: 2;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  margin-top: 20%;
+  width: auto;
+  padding: 5%;
+}
+
+#cover a img{
+  width: 3vw;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/*animation cover*/
+.mySlides {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* end slider image */
+
+/* End Header */
+
+
+/* Start Main */
+#content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#profile {
+    width: 70%;
+    margin-left: 7.8125%;
+    margin-top: 4%;
+    margin-right: 0.5%;
+}
+
+#about {
+    width: 30%;
+    margin-top: 4%;
+    margin-right: 7.8125%;
+    margin-left: 0.5%;
+}
+
+.box {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -1px -1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    align-items: top;
+    padding: 2%;
+}
+
+.box-video {
+  margin-left: 17%;
+  width: 50vw;
+  height: 28.1vw;
+  align-items: center;
+}
+
+.box h1 {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: bold;
+    color: #002366;
+    font-size: 3vw;
+}
+
+.form {
+  margin-left: 7.8%;
+  margin-right: 7.8%;
+  margin-top: 3%;
+}
+
+
+
+.about img {
+  width: 10vw;
+  border-radius: 4%;
+}
+
+.nama p {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 1vw;
+  font-weight: 300;
+  color: #3b3b3b;
+  margin-left: 6%;
+}
+
+/* Start Profile Image Grid */
+.profile {
+  position: relative;
+}
+.img-profil {
+  width: 16.75vw;
+}
+.profile-img {
+  position: relative;
+}
+.profile-img img{
+  border-radius: 3%;
+}
+.profile ul{
+  display: flex;
+  list-style: none;
+  margin-top: 3%;
+  justify-content: center;
+}
+.profile-img .profile-overlay{
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  width: 16.75vw;
+  height: 23.45vw;
+  border-radius: 3%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: .5s;
+}
+.member-name {
+  font-family: 'noto sans';
+  font-weight: normal;
+  text-align: center;
+  font-size: 2vw;
+}
+.profile-img .profile-overlay:hover{
+  opacity: 1;
+}
+  /* end profile image grid */
+
+  .txt-about {
+    background: #002366;
+    border-radius: 5px;
+    padding: 10% 5% 10% 5%;
+    text-align: left;
+    margin-top: 7%;
+  }
+
+  .txt-about p {
+      color: white;
+      font-family: "poppins";
+      font-weight: 400;
+      font-size: 1vw;
+  }
+
+  .txt-dev {
+      font-family: "Atkinson Hyperlegible", sans-serif;
+      margin: 10% 0% 5% 0%;
+      font-size: 1.5vw;
+      color: #002366;
+  }
+  
+  /* Start Discography image grid */
+  #discography-content {
+      display: flex;
+  }
+
+  #discography {
+      width: 84.375%;
+      margin: auto; 
+      margin-top: 4%;
+  }
+
+  .album {
+    position: relative;
+    margin-bottom: 2%;
+  }
+  .album a {
+    text-decoration: none;
+  }
+  .img-album {
+    width: 24.8vw;
+  }
+  .album-img {
+    position: relative;
+  }
+  .album ul{
+    display: flex;
+    list-style: none;
+    margin-top: 3%;
+    justify-content: center;
+  }
+  .album-img .album-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    width: 24.8vw;
+    height: 24.7vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: .5s;
+  }
+  .album-icon {
+    font-family: 'montserrat';
+    font-weight: 250;
+    text-align: center;
+    font-size: 8vw;
+  }
+  .album-img .album-overlay:hover{
+    opacity: 1;
+  }
+
+  .album-name {
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    text-decoration: none;
+  }
+
+  .album-name p {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #3b3b3b;
+    font-size: 1vw;
+  }
+
+  .album-name span {
+    font-family: 'montserrat';
+    font-weight: 400;
+    color: #3b3b3b;
+    font-size: 1vw;
+  }
+  /* end Discography image grid */
+
+  /* start footer */
+  .footer {
+      background: #002366;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1% 2% 1% 2%;
+      margin-top: 4%;
+  }
+
+  .footer div {
+      display: flex;
+      float: left;
+  }
+
+    .img a{
+      margin-right: 2vw;
+  }
+
+  .img img {
+      width: 1.7vw;
+  }
+
+  .footer p {
+      color: white;
+      text-decoration: none;
+      font-size: 0.8vw;
+      font-family: "montserrat", sans-serif;
+  }
+ /* end footer */
+/* End Main */
+
+/* Start hover animation */
+
+/* Nav-bar */
+.logo img:hover {
+  transform: scale(1.2);
+}
+
+.nav-items li a:hover {
+  transform: scale(1.2);
+}
+
+.img img:hover{
+  transform: scale(1.2);
+}
+
+#cover a img:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+  }
+}
